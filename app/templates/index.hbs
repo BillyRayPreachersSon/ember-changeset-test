@@ -1,0 +1,16 @@
+<h2>Widget list</h2>
+
+{{#if model}}
+  <ul>
+    {{#each model as |widget|}}
+      <li>
+        <div>ID: {{widget.id}}</div>
+        <div>Name: {{widget.name}}</div>
+        <div>Size: {{widget.properties.size}}</div>
+        <div>Colour: {{widget.properties.colour}}</div>
+      </li>
+    {{/each}}
+  </ul>
+{{else}}
+  <p>No widgets found.</p>
+{{/if}}

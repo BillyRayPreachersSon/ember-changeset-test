@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+}
+
+nav {
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 2em;
+  padding: 10px 0px;
+}
+
+nav > a {
+  display: inline-block;
+  padding: 0px 10px;
+  border-right: 1px solid #000000;
+}
+
+nav > a:last-child {
+  border-right: none;
+}
+
+li {
+  margin-bottom: 1em;
+}
+
+li > div {
+  margin-bottom: 0.25em;
+}
+
+.form-row {
+  margin-bottom: 1.5em;
+  background-color: #eeeeee;
+  padding: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"] {
+  font-size: 1em;
+  width: 100%;
+  padding: 2px;
+}

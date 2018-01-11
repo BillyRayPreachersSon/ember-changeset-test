@@ -1,0 +1,23 @@
+<h2>Create widget</h2>
+
+<form>
+  <div class="form-row">
+    <label>Name</label>
+    {{input value=model.name}}
+  </div>
+
+  <div class="form-row">
+    <label>Size</label>
+    {{input value=model.properties.size}}
+  </div>
+
+  <div class="form-row">
+    <label>Colour</label>
+    {{input value=model.properties.colour}}
+  </div>
+
+  <div class="form-row">
+    <button type="button" {{action "cancel" model}}>Cancel</button>
+    <button type="button" {{action "save" model}}>Save</button>
+  </div>
+</form>
